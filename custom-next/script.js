@@ -52,11 +52,6 @@ function runCommands(){
       stdio: "inherit",
     });
     
-    // run tailwindcss init
-    childProcess.execSync(`npx tailwindcss init`, {
-      stdio: "inherit",
-    });
-    
     // delete all files in directory before copying
     const deleteFiles = (directory) => {
       if (!fs.existsSync(directory)) {
